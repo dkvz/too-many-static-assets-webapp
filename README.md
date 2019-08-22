@@ -7,3 +7,8 @@ The idea is to generate a bunch of .js files using the `generate_scripts.js` fil
 Yes, it's very stupid.
 
 **Should always double check in the effective test environment if the resources really get fetched (no 404!)**.
+
+For my tests I build it for Linux using (standalone build - dotnet runtime doesn't need to be installed):
+```
+dotnet publish -c Release -r debian-x64
+```
