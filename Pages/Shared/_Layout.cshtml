@@ -50,6 +50,11 @@
 
     <script src="~/js/site.js" asp-append-version="true"></script>
 
+    @for(var i = 0; i < 350; i++)
+    {
+    <script src="@("/js/gen" + i).js"></script>
+    }
+
     @RenderSection("Scripts", required: false)
 </body>
 </html>
